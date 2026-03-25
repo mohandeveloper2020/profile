@@ -19,9 +19,9 @@ const skillItems = [
 
 const timelineItems = [
   {
-    duration: "2024 - Present",
-    role: "Software Developer",
-    company: "Your Current Company",
+    duration: "Dec 2018 - Present",
+    role: "Lead UI Developer",
+    company: "ITC Infotech",
     note: "Building responsive products and scalable features for modern web platforms.",
   },
   {
