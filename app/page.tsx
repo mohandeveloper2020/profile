@@ -25,7 +25,7 @@ const timelineItems = [
     note: "Building responsive products and scalable features for modern web platforms.",
   },
   {
-    duration: "2022 - 2024",
+    duration: "2017 - 2018",
     role: "Frontend Engineer",
     company: "Your Previous Company",
     note: "Designed and developed component systems with a strong focus on UX quality.",
