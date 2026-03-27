@@ -26,14 +26,32 @@ const timelineItems = [
   },
   {
     duration: "2017 - 2018",
-    role: "Frontend Engineer",
-    company: "Your Previous Company",
+    role: "UI Developer",
+    company: "Smartron India Pvt Ltd",
     note: "Designed and developed component systems with a strong focus on UX quality.",
   },
   {
-    duration: "2020 - 2022",
-    role: "Junior Developer",
-    company: "Your Early Career Role",
+    duration: "2016 - 2017",
+    role: "UI Developer",
+    company: "Usha Martin Technologies",
+    note: "Worked on full-stack modules and collaborated closely with product teams.",
+  },
+  {
+    duration: "2016 - 2016",
+    role: "UX Designer",
+    company: "CoWrks",
+    note: "Worked on full-stack modules and collaborated closely with product teams.",
+  },
+  {
+    duration: "2015 - 2016",
+    role: "UX Designer",
+    company: "Razorfish Technologies",
+    note: "Worked on full-stack modules and collaborated closely with product teams.",
+  },
+  {
+    duration: "Apr 2010 - May 2015",
+    role: "Graphic Designer",
+    company: "Hibu",
     note: "Worked on full-stack modules and collaborated closely with product teams.",
   },
 ];
