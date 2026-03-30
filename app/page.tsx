@@ -10,9 +10,9 @@ import styles from "./page.module.css";
 
 const skillItems = [
   { label: "Frontend Development", icon: Globe },
-  { label: "UI Design", icon: PenTool },
-  { label: "API Integration", icon: Layers },
-  { label: "Backend Logic", icon: Terminal },
+  { label: "UI Development", icon: PenTool },
+  { label: "UI Design", icon: Layers },
+  { label: "Version Control", icon: Terminal },
   { label: "Data Handling", icon: Database },
   { label: "Product Delivery", icon: BriefcaseBusiness },
 ];
