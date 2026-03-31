@@ -1,76 +1,70 @@
 import {
   BriefcaseBusiness,
-  Database,
-  Globe,
-  Layers,
-  PenTool,
-  Terminal,
+  Code2,
+  GitBranch,
+  LayoutDashboard,
+  MonitorSmartphone,
+  Palette,
 } from "lucide-react";
 import styles from "./page.module.css";
 
 const skillItems = [
-  { label: "Frontend Development", icon: Globe },
-  { label: "UI Development", icon: PenTool },
-  { label: "UI Design", icon: Layers },
-  { label: "Version Control", icon: Terminal },
-  { label: "Data Handling", icon: Database },
-  { label: "Product Delivery", icon: BriefcaseBusiness },
+  { label: "React.js & Next.js", icon: Code2 },
+  { label: "JavaScript, HTML, CSS & SCSS", icon: GitBranch },
+  { label: "Figma, Adobe XD & Sketch", icon: Palette },
+  { label: "Responsive UI Development", icon: MonitorSmartphone },
+  { label: "Tailwind CSS & Bootstrap 5", icon: LayoutDashboard },
+  { label: "JIRA, Git, GitLab & Bitbucket", icon: BriefcaseBusiness },
 ];
 
 const timelineItems = [
   {
     duration: "Dec 2018 - Present",
-    role: "Lead UI Developer",
+    role: "Lead Consultant - UI/UX",
     company: "ITC Infotech",
-    note: "Building responsive products and scalable features for modern web platforms.",
+    note: "Leading end-to-end design and development for Next.js and React applications for clients including Hitachi Energy and Merck Group, with dashboards, Gen AI workflows, SPFx customization, and scalable UI delivery.",
   },
   {
-    duration: "July 2018 - November 2018",
+    duration: "Jul 2018 - Nov 2018",
     role: "UI Developer",
     company: "Smartron India Pvt Ltd",
-    note: "Designed and developed component systems with a strong focus on UX quality.",
+    note: "Developed and maintained the company website and e-commerce experiences, created semantic Handlebars templates, and worked closely with stakeholders on new product pages.",
   },
   {
-    duration: "April 2017 - June 2018",
+    duration: "Apr 2017 - Jun 2018",
     role: "UI Developer",
     company: "Usha Martin Technologies",
-    note: "Worked on full-stack modules and collaborated closely with product teams.",
+    note: "Built e-commerce interfaces on the Hybris platform, customized out-of-the-box patterns using JSP, LESS, and JavaScript, and ensured pixel-perfect responsiveness across devices.",
   },
   {
-    duration: "July 2016 - March 2017",
+    duration: "Jul 2016 - Mar 2017",
     role: "UX Designer",
     company: "CoWrks",
-    note: "Worked on full-stack modules and collaborated closely with product teams.",
+    note: "Designed and developed in-house websites and apps, created wireframes and UI flows, and supported marketing with structured digital templates.",
   },
   {
-    duration: "May 2015 - June 2016",
+    duration: "May 2015 - Jun 2016",
     role: "UX Designer",
-    company: "Razorfish Technologies",
-    note: "Worked on full-stack modules and collaborated closely with product teams.",
-  },
-  {
-    duration: "Apr 2010 - May 2015",
-    role: "Graphic Designer",
-    company: "Hibu",
-    note: "Worked on full-stack modules and collaborated closely with product teams.",
+    company: "Razorfish Technologies India",
+    note: "Worked on responsive web apps and marketing collateral, supported project pitches and client discussions, and streamlined frontend style guides and component systems.",
   },
 ];
 
 const projectItems = [
   {
-    name: "Project Alpha",
+    name: "Hitachi Energy - Gen AI Dashboard",
     description:
-      "A modern web experience focused on performance and clean architecture. Built reusable components and streamlined user flows for fast onboarding.",
+      "Designed and developed a Next.js-based experience to showcase Gen AI extraction results with analytical charts, document upload workflows, and multi-role access.",
   },
   {
-    name: "Project Nova",
+    name: "Merck Group - SPFx & React Apps",
     description:
-      "An analytics-oriented dashboard that turns raw activity into clear, actionable insights. Includes customizable widgets and responsive charts.",
+      "Built responsive component-based applications using React.js and Tailwind CSS, integrating strong UX design practices and Liquid Oxygen design system customization.",
   },
   {
-    name: "Project Orbit",
+    name: "Commerce & Brand Platforms",
     description:
-      "A collaboration platform concept for distributed teams with task tracking and smart notifications. Designed to balance usability with productivity.",
+      "Contributed to product and e-commerce experiences such as smartron.com, Pick n Pay, and LC Waikiki with responsive UI delivery and business-focused design execution.",
   },
 ];
 
@@ -80,15 +74,24 @@ export default function Home() {
       <div className={styles.backgroundGlow} aria-hidden="true" />
 
       <section className={styles.hero}>
-        <p className={styles.tag}>Personal Profile Showcase</p>
+        <p className={styles.tag}>Lead Consultant - UI/UX</p>
         <h1>
-          Mohan Madheshwaran
-          <span>Full Stack Developer</span>
+          Mohan M
+          <span>Frontend Development • UI Design • UX Strategy</span>
         </h1>
+        <p className={styles.heroSummary}>
+          UI and UX specialist with over 10 years of expertise in frontend development
+          and user interface design, focused on building responsive, accessible, and
+          scalable digital products with clean user experiences.
+        </p>
       </section>
 
       <section className={styles.section}>
         <h2>Skills</h2>
+        <p className={styles.sectionIntro}>
+          Technical strengths from the resume across UI development, UX design tools,
+          responsive engineering, and collaborative delivery workflows.
+        </p>
         <div className={styles.skillsGrid}>
           {skillItems.map(({ label, icon: Icon }) => (
             <article key={label} className={styles.skillCard}>
@@ -101,9 +104,13 @@ export default function Home() {
 
       <section className={styles.section}>
         <h2>Career Timeline</h2>
+        <p className={styles.sectionIntro}>
+          Career progression across enterprise consulting, e-commerce platforms, UX-led
+          product work, and frontend delivery for web applications.
+        </p>
         <div className={styles.timeline}>
           {timelineItems.map((item) => (
-            <article key={item.duration} className={styles.timelineItem}>
+            <article key={`${item.company}-${item.duration}`} className={styles.timelineItem}>
               <p className={styles.timelineDuration}>{item.duration}</p>
               <h3>{item.role}</h3>
               <p className={styles.timelineCompany}>{item.company}</p>
@@ -115,10 +122,14 @@ export default function Home() {
 
       <section className={styles.section}>
         <h2>Projects</h2>
+        <p className={styles.sectionIntro}>
+          Selected highlights adapted from the resume, covering Gen AI dashboards,
+          enterprise platforms, and commerce-focused web experiences.
+        </p>
         <div className={styles.projectsGrid}>
           {projectItems.map((project) => (
             <article key={project.name} className={styles.projectCard}>
-              <div className={styles.imagePlaceholder}>Project Image Placeholder</div>
+              <div className={styles.imagePlaceholder}>Project Preview Placeholder</div>
               <h3>{project.name}</h3>
               <p>{project.description}</p>
             </article>

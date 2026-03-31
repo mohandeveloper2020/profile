@@ -14,8 +14,9 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "Mohan | Profile Showcase",
-  description: "Personal profile showcasing skills, career timeline, and projects.",
+  title: "Mohan M | Lead Consultant - UI/UX",
+  description:
+    "Portfolio site for Mohan M featuring frontend development, UI/UX expertise, career highlights, and selected project work.",
 };
 
 export default function RootLayout({
