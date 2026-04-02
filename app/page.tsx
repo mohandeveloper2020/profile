@@ -1,15 +1,10 @@
 import {
   BriefcaseBusiness,
   Code2,
-  Database,
-  Globe,
   GitBranch,
   LayoutDashboard,
-  Layers,
   MonitorSmartphone,
   Palette,
-  PenTool,
-  Terminal,
 } from "lucide-react";
 import styles from "./page.module.css";
 
@@ -26,28 +21,79 @@ const technicalSkillSections = [
   {
     title: "UI Development",
     items: [
-      { label: "React.js", icon: Code2 },
-      { label: "Next.js", icon: Globe },
-      { label: "JavaScript", icon: GitBranch },
-      { label: "HTML", icon: Layers },
-      { label: "CSS", icon: Palette },
-      { label: "SCSS", icon: PenTool },
-      { label: "Tailwind CSS", icon: LayoutDashboard },
-      { label: "Bootstrap 5", icon: Database },
-      { label: "BEM", icon: Terminal },
+      {
+        label: "React.js",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/React.svg",
+      },
+      {
+        label: "Next.js",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Next.js.svg",
+      },
+      {
+        label: "JavaScript",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+      },
+      {
+        label: "HTML",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/HTML5.svg",
+      },
+      {
+        label: "CSS",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/CSS3.svg",
+      },
+      {
+        label: "SCSS",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Sass.svg",
+      },
+      {
+        label: "Tailwind CSS",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+      },
+      {
+        label: "Bootstrap 5",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Bootstrap.svg",
+      },
+      {
+        label: "BEM",
+        iconUrl: "https://techicons.dev/missing-icon.png",
+      },
     ],
   },
   {
     title: "UX Design Tools",
     items: [
-      { label: "Figma", icon: Palette },
-      { label: "Adobe XD", icon: PenTool },
-      { label: "Sketch", icon: Layers },
-      { label: "UX Pin", icon: LayoutDashboard },
-      { label: "Invision", icon: MonitorSmartphone },
-      { label: "Photoshop", icon: Palette },
-      { label: "Illustrator", icon: PenTool },
-      { label: "UX Tools", icon: BriefcaseBusiness },
+      {
+        label: "Figma",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Figma.svg",
+      },
+      {
+        label: "Adobe XD",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-XD.svg",
+      },
+      {
+        label: "Sketch",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Sketch.svg",
+      },
+      {
+        label: "UX Pin",
+        iconUrl: "https://techicons.dev/missing-icon.png",
+      },
+      {
+        label: "Invision",
+        iconUrl: "https://techicons.dev/missing-icon.png",
+      },
+      {
+        label: "Photoshop",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-Photoshop.svg",
+      },
+      {
+        label: "Illustrator",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-Illustrator.svg",
+      },
+      {
+        label: "UX Tools",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Figma.svg",
+      },
     ],
   },
 ];
@@ -148,9 +194,16 @@ export default function Home() {
             <article key={group.title} className={styles.technicalGroup}>
               <h3>{group.title}</h3>
               <div className={styles.technicalItems}>
-                {group.items.map(({ label, icon: Icon }) => (
+                {group.items.map(({ label, iconUrl }) => (
                   <div key={label} className={styles.technicalItem}>
-                    <Icon size={18} aria-hidden="true" />
+                    <img
+                      src={iconUrl}
+                      alt=""
+                      width={18}
+                      height={18}
+                      loading="lazy"
+                      className={styles.techIcon}
+                    />
                     <span>{label}</span>
                   </div>
                 ))}
