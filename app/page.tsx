@@ -34,6 +34,10 @@ const technicalSkillSections = [
         iconUrl: "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
       },
       {
+        label: "TypeScript",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+      },
+      {
         label: "HTML",
         iconUrl: "https://icon.icepanel.io/Technology/svg/HTML5.svg",
       },
@@ -53,10 +57,6 @@ const technicalSkillSections = [
         label: "Bootstrap 5",
         iconUrl: "https://icon.icepanel.io/Technology/svg/Bootstrap.svg",
       },
-      {
-        label: "BEM",
-        iconUrl: "https://techicons.dev/missing-icon.png",
-      },
     ],
   },
   {
@@ -67,32 +67,24 @@ const technicalSkillSections = [
         iconUrl: "https://icon.icepanel.io/Technology/svg/Figma.svg",
       },
       {
-        label: "Adobe XD",
-        iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-XD.svg",
-      },
-      {
         label: "Sketch",
         iconUrl: "https://icon.icepanel.io/Technology/svg/Sketch.svg",
       },
       {
-        label: "UX Pin",
-        iconUrl: "https://techicons.dev/missing-icon.png",
+        label: "Adobe XD",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-XD.svg",
       },
       {
-        label: "Invision",
-        iconUrl: "https://techicons.dev/missing-icon.png",
-      },
-      {
-        label: "Photoshop",
-        iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-Photoshop.svg",
-      },
-      {
-        label: "Illustrator",
+        label: "Adobe Illustrator",
         iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-Illustrator.svg",
       },
       {
+        label: "Adobe Photoshop",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-Photoshop.svg",
+      },
+      {
         label: "UX Tools",
-        iconUrl: "https://icon.icepanel.io/Technology/svg/Figma.svg",
+        iconUrl: "https://cdn.jsdelivr.net/npm/@mdi/svg@7.4.47/svg/pencil-ruler.svg",
       },
     ],
   },
@@ -199,8 +191,8 @@ export default function Home() {
                     <img
                       src={iconUrl}
                       alt=""
-                      width={18}
-                      height={18}
+                      width={32}
+                      height={32}
                       loading="lazy"
                       className={styles.techIcon}
                     />
