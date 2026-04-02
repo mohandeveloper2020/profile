@@ -1,10 +1,15 @@
 import {
   BriefcaseBusiness,
   Code2,
+  Database,
+  Globe,
   GitBranch,
   LayoutDashboard,
+  Layers,
   MonitorSmartphone,
   Palette,
+  PenTool,
+  Terminal,
 } from "lucide-react";
 import styles from "./page.module.css";
 
@@ -15,6 +20,36 @@ const skillItems = [
   { label: "Responsive UI Development", icon: MonitorSmartphone },
   { label: "Tailwind CSS & Bootstrap 5", icon: LayoutDashboard },
   { label: "JIRA, Git, GitLab & Bitbucket", icon: BriefcaseBusiness },
+];
+
+const technicalSkillSections = [
+  {
+    title: "UI Development",
+    items: [
+      { label: "React.js", icon: Code2 },
+      { label: "Next.js", icon: Globe },
+      { label: "JavaScript", icon: GitBranch },
+      { label: "HTML", icon: Layers },
+      { label: "CSS", icon: Palette },
+      { label: "SCSS", icon: PenTool },
+      { label: "Tailwind CSS", icon: LayoutDashboard },
+      { label: "Bootstrap 5", icon: Database },
+      { label: "BEM", icon: Terminal },
+    ],
+  },
+  {
+    title: "UX Design Tools",
+    items: [
+      { label: "Figma", icon: Palette },
+      { label: "Adobe XD", icon: PenTool },
+      { label: "Sketch", icon: Layers },
+      { label: "UX Pin", icon: LayoutDashboard },
+      { label: "Invision", icon: MonitorSmartphone },
+      { label: "Photoshop", icon: Palette },
+      { label: "Illustrator", icon: PenTool },
+      { label: "UX Tools", icon: BriefcaseBusiness },
+    ],
+  },
 ];
 
 const timelineItems = [
@@ -97,6 +132,29 @@ export default function Home() {
             <article key={label} className={styles.skillCard}>
               <Icon size={24} aria-hidden="true" />
               <p>{label}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <h2>Technical Skills</h2>
+        <p className={styles.sectionIntro}>
+          Resume-based breakdown of UI Development and UX Design Tools with
+          technology-level listing.
+        </p>
+        <div className={styles.technicalGroups}>
+          {technicalSkillSections.map((group) => (
+            <article key={group.title} className={styles.technicalGroup}>
+              <h3>{group.title}</h3>
+              <div className={styles.technicalItems}>
+                {group.items.map(({ label, icon: Icon }) => (
+                  <div key={label} className={styles.technicalItem}>
+                    <Icon size={18} aria-hidden="true" />
+                    <span>{label}</span>
+                  </div>
+                ))}
+              </div>
             </article>
           ))}
         </div>

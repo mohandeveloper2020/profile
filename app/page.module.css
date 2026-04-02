@@ -126,6 +126,44 @@
   box-shadow: 0 10px 22px rgb(19 42 19 / 10%);
 }
 
+.technicalGroups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.technicalGroup {
+  border: 1px solid rgb(19 42 19 / 11%);
+  border-radius: 16px;
+  padding: 1rem;
+  background: rgb(255 255 255 / 76%);
+  box-shadow: 0 8px 20px rgb(19 42 19 / 7%);
+}
+
+.technicalGroup h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.02rem;
+}
+
+.technicalItems {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.technicalItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgb(19 42 19 / 9%);
+  border-radius: 12px;
+  padding: 0.55rem 0.65rem;
+  background: rgb(255 255 255 / 88%);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(19 42 19 / 82%);
+}
+
 .timeline {
   border-left: 2px dashed rgb(19 42 19 / 35%);
   padding-left: 1.2rem;
@@ -256,6 +294,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .technicalGroups {
+    grid-template-columns: 1fr;
+  }
+
   .projectsGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -275,6 +317,10 @@
 
   .skillsGrid,
   .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .technicalItems {
     grid-template-columns: 1fr;
   }
 
