@@ -280,6 +280,23 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section className={styles.section}>
+        <h2>Vision</h2>
+        <article className={styles.visionCard}>
+          <p className={styles.visionLead}>
+            I enjoy making the web " Beautiful and User-Friendly "
+          </p>
+        </article>
+        <article className={styles.visionCard}>
+          <p className={styles.visionLead}>
+            " Aspiring to take on a strategic role, applying my UI/UX expertise,
+            leadership and mentoring skills, to drive digital transformations. While
+            continuously upskilling, especially in emerging AI technologies and
+            managerial disciplines, to foster innovation and strategic growth "
+          </p>
+        </article>
+      </section>
     </main>
   );
 }
