@@ -23,12 +23,37 @@
 
 .hero {
   position: relative;
-  border: 1px solid rgb(19 42 19 / 14%);
+  /* border: 1px solid rgb(19 42 19 / 14%); */
   border-radius: 28px;
-  padding: 3.25rem 2.25rem;
-  background: linear-gradient(135deg, #fffef5 0%, #f0f8ea 48%, #ebf5ff 100%);
-  box-shadow: 0 20px 45px rgb(10 26 10 / 10%);
+  /* padding: 3.25rem 2.25rem; */
+  overflow: hidden;
+  /* background:
+    linear-gradient(120deg, rgb(255 255 255 / 88%), rgb(241 248 237 / 86%)),
+    radial-gradient(circle at 85% 25%, rgb(28 103 88 / 18%), transparent 58%),
+    radial-gradient(circle at 20% 85%, rgb(49 124 191 / 16%), transparent 62%); */
+  /* box-shadow: 0 20px 45px rgb(10 26 10 / 10%); */
   animation: slideUp 0.85s ease;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 55%, rgb(255 255 255 / 18%));
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(220px, 0.8fr);
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.heroText {
+  max-width: 44rem;
 }
 
 .tag {
@@ -66,6 +91,21 @@
   font-size: 1rem;
   line-height: 1.7;
   color: rgb(19 42 19 / 76%);
+}
+
+.heroImageWrap {
+  justify-self: end;
+  width: min(100%, 290px);
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid rgb(19 42 19 / 15%);
+  box-shadow: 0 18px 34px rgb(10 26 10 / 16%);
+  object-fit: cover;
+  background: linear-gradient(180deg, rgb(255 255 255 / 80%), rgb(226 238 228 / 80%));
 }
 
 .section {
@@ -128,7 +168,7 @@
 
 .technicalGroups {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -136,7 +176,7 @@
   border: 1px solid rgb(19 42 19 / 11%);
   border-radius: 16px;
   padding: 1rem;
-  background: rgb(255 255 255 / 76%);
+  /* background: rgb(255 255 255 / 76%); */
   box-shadow: 0 8px 20px rgb(19 42 19 / 7%);
 }
 
@@ -147,7 +187,7 @@
 
 .technicalItems {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.6rem;
 }
 
@@ -301,10 +341,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .technicalGroups {
-    grid-template-columns: 1fr;
-  }
-
   .projectsGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -320,6 +356,16 @@
   .hero {
     padding: 2rem 1rem;
     border-radius: 20px;
+  }
+
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .heroImageWrap {
+    justify-self: center;
+    width: min(100%, 260px);
   }
 
   .skillsGrid,

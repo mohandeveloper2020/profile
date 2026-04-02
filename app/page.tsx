@@ -6,6 +6,7 @@ import {
   MonitorSmartphone,
   Palette,
 } from "lucide-react";
+import Image from "next/image";
 import styles from "./page.module.css";
 
 const skillItems = [
@@ -75,16 +76,46 @@ const technicalSkillSections = [
         iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-XD.svg",
       },
       {
-        label: "Adobe Illustrator",
-        iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-Illustrator.svg",
-      },
-      {
-        label: "Adobe Photoshop",
-        iconUrl: "https://icon.icepanel.io/Technology/svg/Adobe-Photoshop.svg",
-      },
-      {
         label: "UX Tools",
         iconUrl: "https://cdn.jsdelivr.net/npm/@mdi/svg@7.4.47/svg/pencil-ruler.svg",
+      },
+    ],
+  },
+  {
+    title: "Project Management",
+    items: [
+      {
+        label: "Git",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Git.svg",
+      },
+      {
+        label: "Jira",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Jira.svg",
+      },
+      {
+        label: "GitLab",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/GitLab.svg",
+      },
+      {
+        label: "BitBucket",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/BitBucket.svg",
+      },
+      {
+        label: "GitHub",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/GitHub.svg",
+      },
+      {
+        label: "VS Code",
+        iconUrl:
+          "https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg",
+      },
+      {
+        label: "Azure",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Azure.svg",
+      },
+      {
+        label: "Azure Devops",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Azure-Devops.svg",
       },
     ],
   },
@@ -147,19 +178,33 @@ export default function Home() {
       <div className={styles.backgroundGlow} aria-hidden="true" />
 
       <section className={styles.hero}>
-        <p className={styles.tag}>Lead Consultant - UI/UX</p>
-        <h1>
-          Mohan M
-          <span>Frontend Development • UI Design • UX Strategy</span>
-        </h1>
-        <p className={styles.heroSummary}>
-          UI and UX specialist with over 10 years of expertise in frontend development
-          and user interface design, focused on building responsive, accessible, and
-          scalable digital products with clean user experiences.
-        </p>
+        <div className={styles.heroContent}>
+          <div className={styles.heroText}>
+            <p className={styles.tag}>Lead Consultant - UI/UX</p>
+            <h1>
+              Mohan M
+              <span>Frontend Development • UI Design • UX Strategy</span>
+            </h1>
+            <p className={styles.heroSummary}>
+              UI and UX specialist with over 10 years of expertise in frontend development
+              and user interface design, focused on building responsive, accessible, and
+              scalable digital products with clean user experiences.
+            </p>
+          </div>
+          <div className={styles.heroImageWrap}>
+            <Image
+              src="/profile-pic.jpg"
+              alt="Mohan profile photo"
+              width={360}
+              height={420}
+              className={styles.heroImage}
+              priority
+            />
+          </div>
+        </div>
       </section>
 
-      <section className={styles.section}>
+      {/* <section className={styles.section}>
         <h2>Skills</h2>
         <p className={styles.sectionIntro}>
           Technical strengths from the resume across UI development, UX design tools,
@@ -173,14 +218,10 @@ export default function Home() {
             </article>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.section}>
         <h2>Technical Skills</h2>
-        <p className={styles.sectionIntro}>
-          Resume-based breakdown of UI Development and UX Design Tools with
-          technology-level listing.
-        </p>
         <div className={styles.technicalGroups}>
           {technicalSkillSections.map((group) => (
             <article key={group.title} className={styles.technicalGroup}>
