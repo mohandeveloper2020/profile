@@ -180,15 +180,13 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <p className={styles.tag}>Lead Consultant - UI/UX</p>
+            <p className={styles.tag}>UI/UX Specialist - Design and Development</p>
             <h1>
-              Mohan M
+              Mohan Madheshwaran
               <span>Frontend Development • UI Design • UX Strategy</span>
             </h1>
             <p className={styles.heroSummary}>
-              UI and UX specialist with over 10 years of expertise in frontend development
-              and user interface design, focused on building responsive, accessible, and
-              scalable digital products with clean user experiences.
+              " I enjoy making the web Beautiful and User-Friendly "
             </p>
           </div>
           <div className={styles.heroImageWrap}>

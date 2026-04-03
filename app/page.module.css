@@ -5,7 +5,7 @@
   margin: 0 auto;
   padding: 4.5rem 0 5rem;
   display: grid;
-  gap: 2.5rem;
+  gap: 6rem;
 }
 
 .backgroundGlow {
@@ -24,7 +24,7 @@
 .hero {
   position: relative;
   /* border: 1px solid rgb(19 42 19 / 14%); */
-  border-radius: 28px;
+  /* border-radius: 28px; */
   /* padding: 3.25rem 2.25rem; */
   overflow: hidden;
   /* background:
@@ -188,16 +188,16 @@
 .technicalItems {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.6rem;
+  gap: 1rem;
 }
 
 .technicalItem {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   border: 1px solid rgb(19 42 19 / 9%);
   border-radius: 12px;
-  padding: 0.55rem 0.65rem;
+  padding: 0.5rem 1rem;
   background: rgb(255 255 255 / 88%);
   font-size: 0.9rem;
   font-weight: 600;
@@ -388,7 +388,7 @@
   }
 
   .technicalItems {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .timeline {
