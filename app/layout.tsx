@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import styles from "./layout.module.css";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-body",
@@ -26,7 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${bebasNeue.variable}`}>
-      <body>{children}</body>
+      <body>
+        <div className={styles.shell}>
+          <div className={styles.backgroundGlow} aria-hidden="true" />
+          <main className={styles.main}>{children}</main>
+          <footer className={styles.footer}>
+            Building thoughtful interfaces for enterprise products and digital experiences.
+          </footer>
+        </div>
+      </body>
     </html>
   );
 }
