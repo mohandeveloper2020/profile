@@ -10,7 +10,7 @@ export default function SkillsSection() {
         {technicalSkillSections.map((group) => (
           <article key={group.title} className="rounded-2xl p-4 md:p-5">
             <h3 className="mb-3 text-xl font-semibold text-zinc-900">{group.title}</h3>
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 rounded-2xl shadow-xs p-4">
               {group.items.map(({ label, iconUrl }) => (
                 <div
                   key={label}

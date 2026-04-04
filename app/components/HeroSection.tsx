@@ -3,12 +3,12 @@ import { visionStatements } from "../portfolio-data";
 
 export default function HeroSection() {
   return (
-    <section className="overflow-hidden rounded-3xl p-6">
+    <section className="p-6">
       <div className="grid items-center gap-6 md:grid-cols-[1.35fr_0.8fr] md:gap-8">
         <div>
           <p className="eyebrow mb-3">UI/UX Specialist - Design and Development</p>
           <h1 className="space-y-1">
-            <span className="section-title block text-[clamp(3.2rem,8vw,5.6rem)] leading-[0.92] text-[#132a13]">
+            <span className="section-title block text-[clamp(3.2rem,8vw,6rem)] leading-[0.92] text-[#132a13]">
               Mohan Madheshwaran
             </span>
             <span className="section-title block text-[clamp(1.1rem,3vw,1.75rem)] leading-tight tracking-wide text-[#132a13]">
