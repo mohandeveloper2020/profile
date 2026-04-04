@@ -26,14 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${bebasNeue.variable}`}>
-      <body>
-        <div className="min-h-screen">
-          <main className="mx-auto w-full max-w-6xl px-4 pb-16 pt-10 sm:px-6 sm:pt-12 lg:px-8">
+      <body className="relative">
+        <div className="min-h-screen pb-4">
+          <main className="mx-auto w-full max-w-6xl px-4 pb-14 pt-8 sm:px-6 sm:pt-10 lg:px-8 lg:pt-12">
             {children}
           </main>
-          <footer className="mx-auto w-full max-w-6xl px-4 pb-8 text-sm text-zinc-600 sm:px-6 lg:px-8">
-            Building thoughtful interfaces for enterprise products and digital experiences.
-          </footer>
         </div>
       </body>
     </html>

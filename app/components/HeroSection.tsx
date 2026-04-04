@@ -1,25 +1,21 @@
 import Image from "next/image";
+import { visionStatements } from "../portfolio-data";
 
 export default function HeroSection() {
   return (
-    <section className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm md:p-10">
-      <div className="grid items-center gap-6 md:grid-cols-[1.35fr_0.85fr] md:gap-8">
-        <div className="max-w-3xl">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-zinc-500">
-            UI/UX Specialist - Design and Development
-          </p>
-          <h1>
-            <span className="block text-4xl leading-tight text-zinc-900 [font-family:var(--font-display)] sm:text-5xl md:text-6xl">
+    <section className="overflow-hidden rounded-3xl p-6">
+      <div className="grid items-center gap-6 md:grid-cols-[1.35fr_0.8fr] md:gap-8">
+        <div>
+          <p className="eyebrow mb-3">UI/UX Specialist - Design and Development</p>
+          <h1 className="space-y-1">
+            <span className="section-title block text-[clamp(3.2rem,8vw,5.6rem)] leading-[0.92] text-[#132a13]">
               Mohan Madheshwaran
             </span>
-            <span className="mt-3 block text-lg font-semibold text-zinc-700 md:text-2xl">
-              Frontend Development • UI Design • UX Strategy
+            <span className="section-title block text-[clamp(1.1rem,3vw,1.75rem)] leading-tight tracking-wide text-[#132a13]">
+              Frontend Development &#8226; UI Design &#8226; UX Strategy
             </span>
           </h1>
-          <p className="mt-4 text-base leading-7 text-zinc-600">
-            Designing and building digital experiences that balance product clarity, visual quality,
-            and real-world implementation rigor.
-          </p>
+          <p className="mt-4 text-sm italic text-[rgb(19_42_19_/_72%)]">{visionStatements[0]}</p>
         </div>
         <div className="w-full max-w-[280px] justify-self-center md:justify-self-end">
           <Image
@@ -27,7 +23,7 @@ export default function HeroSection() {
             alt="Mohan profile photo"
             width={360}
             height={420}
-            className="h-auto w-full rounded-xl border border-zinc-200 object-cover shadow-sm"
+            className="h-auto w-full rounded-2xl object-cover shadow-[0_12px_28px_rgb(10_26_10_/_18%)]"
             priority
           />
         </div>
