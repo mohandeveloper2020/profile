@@ -95,8 +95,7 @@ export const technicalSkillSections = [
       },
       {
         label: "VS Code",
-        iconUrl:
-          "https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg",
       },
       {
         label: "Azure",

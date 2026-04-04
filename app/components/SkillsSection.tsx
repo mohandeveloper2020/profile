@@ -3,36 +3,32 @@ import { skillItems, technicalSkillSections } from "../portfolio-data";
 
 export default function SkillsSection() {
   return (
-    <section className="grid gap-4">
-      <h2 className="text-[clamp(1.25rem,2vw,1.75rem)]">Technical Skills</h2>
-      <p className="max-w-[46rem] leading-[1.6] text-[rgb(19_42_19_/_70%)]">
-        Frontend engineering and UI/UX delivery across modern React platforms,
-        design tooling, and collaborative product workflows.
-      </p>
+    <section className="space-y-4">
+      <h2 className="text-2xl font-semibold text-zinc-900 md:text-3xl">Technical Skills</h2>
 
-      <div className="grid grid-cols-3 gap-[0.9rem] max-[900px]:grid-cols-2 max-[720px]:grid-cols-1">
+      {/* <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {skillItems.map((label) => (
           <article
             key={label}
-            className="flex min-h-full items-center rounded-2xl border border-[rgb(19_42_19_/_10%)] bg-[rgb(255_255_255_/_78%)] p-4 font-semibold text-[rgb(19_42_19_/_82%)] shadow-[0_8px_20px_rgb(19_42_19_/_6%)]"
+            className="rounded-xl border border-zinc-200 bg-white p-4 font-medium text-zinc-800 shadow-sm"
           >
             {label}
           </article>
         ))}
-      </div>
+      </div> */}
 
-      <div className="grid gap-4">
+      <div className="space-y-4">
         {technicalSkillSections.map((group) => (
           <article
             key={group.title}
-            className="rounded-[18px] border border-[rgb(19_42_19_/_11%)] bg-[rgb(255_255_255_/_56%)] p-4 shadow-[0_8px_20px_rgb(19_42_19_/_7%)]"
+            className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm md:p-5"
           >
-            <h3 className="mb-4 text-[1.02rem]">{group.title}</h3>
-            <div className="grid grid-cols-4 gap-[0.9rem] max-[900px]:grid-cols-3 max-[720px]:grid-cols-1">
+            <h3 className="mb-3 text-lg font-semibold text-zinc-900">{group.title}</h3>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {group.items.map(({ label, iconUrl }) => (
                 <div
                   key={label}
-                  className="flex items-center gap-3 rounded-[14px] border border-[rgb(19_42_19_/_9%)] bg-[rgb(255_255_255_/_88%)] px-[0.9rem] py-3 text-[0.9rem] font-semibold text-[rgb(19_42_19_/_82%)]"
+                  className="flex items-center gap-3 rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2.5 text-sm font-medium text-zinc-800"
                 >
                   <Image
                     src={iconUrl}

@@ -2,27 +2,25 @@ import { timelineItems } from "../portfolio-data";
 
 export default function ExperienceSection() {
   return (
-    <section className="grid gap-4">
-      <h2 className="text-[clamp(1.25rem,2vw,1.75rem)]">Career Timeline</h2>
-      <p className="max-w-[46rem] leading-[1.6] text-[rgb(19_42_19_/_70%)]">
-        Career progression across enterprise consulting, e-commerce platforms, UX-led
-        product work, and frontend delivery for web applications.
+    <section className="space-y-4">
+      <h2 className="text-2xl font-semibold text-zinc-900 md:text-3xl">Career Timeline</h2>
+      <p className="max-w-3xl leading-7 text-zinc-600">
+        Career progression across enterprise consulting, e-commerce platforms, UX-led product work,
+        and frontend delivery for web applications.
       </p>
-      <div className="grid gap-4 border-l-2 border-dashed border-[rgb(19_42_19_/_30%)] pl-5 max-[720px]:pl-4">
+      <div className="space-y-4 border-l-2 border-dashed border-zinc-300 pl-5 md:pl-6">
         {timelineItems.map((item) => (
           <article
             key={`${item.company}-${item.duration}`}
-            className="relative rounded-[18px] border border-[rgb(19_42_19_/_10%)] bg-[rgb(255_255_255_/_84%)] p-4"
+            className="relative rounded-xl border border-zinc-200 bg-white p-4 shadow-sm"
           >
-            <span className="absolute left-[-1.62rem] top-[1.1rem] h-[10px] w-[10px] rounded-full bg-[#1a7f64] shadow-[0_0_0_5px_rgb(26_127_100_/_18%)] max-[720px]:left-[-1.32rem]" />
-            <p className="mb-[0.4rem] inline-block text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[rgb(19_42_19_/_60%)]">
+            <span className="absolute -left-[1.75rem] top-4 h-2.5 w-2.5 rounded-full bg-emerald-600 ring-4 ring-emerald-100 md:-left-[2.1rem]" />
+            <p className="mb-1 inline-block text-xs font-semibold uppercase tracking-wide text-zinc-500">
               {item.duration}
             </p>
-            <h3>{item.role}</h3>
-            <p className="mb-[0.45rem] mt-[0.2rem] font-semibold text-[rgb(19_42_19_/_82%)]">
-              {item.company}
-            </p>
-            <p className="leading-[1.6] text-[rgb(19_42_19_/_74%)]">{item.note}</p>
+            <h3 className="text-lg font-semibold text-zinc-900">{item.role}</h3>
+            <p className="mb-2 mt-1 font-medium text-zinc-700">{item.company}</p>
+            <p className="leading-7 text-zinc-600">{item.note}</p>
           </article>
         ))}
       </div>
