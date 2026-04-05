@@ -20,9 +20,15 @@ body {
   overflow-x: hidden;
   color: var(--foreground);
   background-color: var(--background);
-  background-image:
+  /* background-image:
     radial-gradient(circle at 8% 0%, rgb(239 111 63 / 10%) 0%, transparent 26%),
-    radial-gradient(circle at 88% 12%, rgb(15 118 110 / 10%) 0%, transparent 28%);
+    radial-gradient(circle at 88% 12%, rgb(15 118 110 / 10%) 0%, transparent 28%); */
+  position: relative;
+  width: 100%;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(255, 200, 120, 0.35) 0%, rgba(0, 0, 0, 0) 38%),
+    radial-gradient(circle at 88% 20%, rgba(86, 170, 255, 0.28) 0%, rgba(0, 0, 0, 0) 42%),
+    radial-gradient(circle at 45% 85%, rgba(64, 224, 173, 0.16) 0%, rgba(0, 0, 0, 0) 45%);
 }
 
 body {

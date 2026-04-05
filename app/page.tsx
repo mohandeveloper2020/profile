@@ -6,7 +6,7 @@ import VisionSection from "./components/VisionSection";
 
 export default function Home() {
   return (
-    <div className="space-y-7 md:space-y-9">
+    <div className="space-y-20">
       <HeroSection />
       <SkillsSection />
       <ExperienceSection />

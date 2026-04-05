@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${bebasNeue.variable}`}>
-      <body className="relative">
+      <body className="relative" suppressHydrationWarning>
         <div className="min-h-screen pb-4">
           <main className="mx-auto w-full max-w-6xl px-4 pb-14 pt-8 sm:px-6 sm:pt-10 lg:px-8 lg:pt-12">
             {children}

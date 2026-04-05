@@ -3,7 +3,7 @@ import { visionStatements } from "../portfolio-data";
 
 export default function HeroSection() {
   return (
-    <section className="p-6">
+    <section className="space-y-4">
       <div className="grid items-center gap-6 md:grid-cols-[1.35fr_0.8fr] md:gap-8">
         <div>
           <p className="eyebrow mb-3">UI/UX Specialist - Design and Development</p>
