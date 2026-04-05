@@ -14,7 +14,7 @@ export default function SkillsSection() {
               {group.items.map(({ label, iconUrl }) => (
                 <div
                   key={label}
-                  className="group flex items-center gap-3 rounded-xl border border-[rgb(24_24_27_/_10%)] bg-[rgb(255_255_255_/_85%)] px-3 py-2.5 text-sm font-medium text-zinc-800 transition-transform duration-200 hover:-translate-y-0.5"
+                  className="group flex items-center gap-3 rounded-xl border border-[#18181b1a] bg-[#ffffffd9] px-3 py-2.5 text-sm font-medium text-zinc-800 transition-transform duration-200 hover:-translate-y-0.5"
                 >
                   <Image
                     src={iconUrl}

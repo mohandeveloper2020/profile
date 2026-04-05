@@ -47,6 +47,28 @@ export const technicalSkillSections = [
         label: "Bootstrap 5",
         iconUrl: "https://icon.icepanel.io/Technology/svg/Bootstrap.svg",
       },
+
+      {
+        label: "VS Code",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg",
+      },
+
+      {
+        label: "Cursor",
+        iconUrl: "/icons/cursor.svg",
+      },
+      {
+        label: "GitHub Copilot",
+        iconUrl: "/icons/githubcopilot.svg",
+      },
+      {
+        label: "Claude",
+        iconUrl: "/icons/claude.svg",
+      },
+      {
+        label: "Codex",
+        iconUrl: "/icons/codex.svg",
+      },
     ],
   },
   {
@@ -92,10 +114,6 @@ export const technicalSkillSections = [
       {
         label: "GitHub",
         iconUrl: "https://icon.icepanel.io/Technology/svg/GitHub.svg",
-      },
-      {
-        label: "VS Code",
-        iconUrl: "https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg",
       },
       {
         label: "Azure",
