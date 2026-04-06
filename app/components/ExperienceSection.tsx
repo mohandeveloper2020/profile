@@ -4,10 +4,6 @@ export default function ExperienceSection() {
   return (
     <section className="space-y-5">
       <h2 className="text-2xl font-semibold text-zinc-900">Career Timeline</h2>
-      <p className="max-w-3xl leading-7 text-zinc-600">
-        Career progression across enterprise consulting, e-commerce platforms, UX-led product work,
-        and frontend delivery for web applications.
-      </p>
       <div className="space-y-4 border-l-2 border-dashed border-[#0f766e4d] pl-5 md:pl-6">
         {timelineItems.map((item) => (
           <article key={`${item.company}-${item.duration}`} className="relative rounded-2xl p-4">
@@ -16,7 +12,7 @@ export default function ExperienceSection() {
             <h3 className="text-xl font-semibold text-zinc-900">{item.role}</h3>
             <p className="mb-2 mt-1 font-medium text-zinc-700">{item.company}</p>
             {"clients" in item ? (
-              <div className="mt-2 space-y-4">
+              <div className="mt-2 space-y-5">
                 {item.clients.map((client) => (
                   <div key={client.name}>
                     <p className="eyebrow mb-2 text-[0.68rem] text-[rgb(15_90_84)]">
@@ -33,12 +29,54 @@ export default function ExperienceSection() {
                         </li>
                       ))}
                     </ul>
+                    {"notableProjects" in client && client.notableProjects.length > 0 && (
+                      <div className="mt-3">
+                        <p className="eyebrow mb-1.5 text-[0.66rem]">Notable Projects</p>
+                        <ul className="flex flex-wrap gap-2">
+                          {client.notableProjects.map((project) => (
+                            <li
+                              key={project}
+                              className="rounded-full border border-[#0f766e33] bg-[rgb(15_118_110_/_8%)] px-2.5 py-1 text-xs text-[rgb(15_80_70)]"
+                            >
+                              {project}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
-            ) : (
-              <p className="leading-7 text-zinc-600">{item.note}</p>
-            )}
+            ) : "points" in item ? (
+              <div className="mt-2">
+                <ul className="space-y-2">
+                  {item.points.map((point) => (
+                    <li key={point} className="flex gap-2.5 text-sm leading-6 text-zinc-600">
+                      <span
+                        aria-hidden="true"
+                        className="mt-[0.35rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]"
+                      />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+                {"notableProjects" in item && item.notableProjects.length > 0 && (
+                  <div className="mt-3">
+                    <p className="eyebrow mb-1.5 text-[0.66rem]">Notable Projects</p>
+                    <ul className="flex flex-wrap gap-2">
+                      {item.notableProjects.map((project) => (
+                        <li
+                          key={project}
+                          className="rounded-full border border-[#0f766e33] bg-[rgb(15_118_110_/_8%)] px-2.5 py-1 text-xs text-[rgb(15_80_70)]"
+                        >
+                          {project}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            ) : null}
           </article>
         ))}
       </div>

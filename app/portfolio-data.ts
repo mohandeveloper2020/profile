@@ -144,6 +144,7 @@ export const timelineItems = [
           "Built dashboards with analytical charts, upload workflows and multi-role access, ensuring secure and scalable delivery for driving digitalization of engineering documents.",
           "Presented demos in stakeholders and steerco meetings, aligning with brand guidelines and project objectives.",
         ],
+        notableProjects: ["Quality Bot", "Meta Data Extraction"],
       },
       {
         name: "Merck Group (Science and Technology Company)",
@@ -154,6 +155,7 @@ export const timelineItems = [
           "Utilized design tools such as Figma and Adobe XD for prototyping, enhancing UX design.",
           "Integration with Liquid Oxygen Design system and UI customization for Gen AI apps.",
         ],
+        notableProjects: ["Gen AI Dashboard"],
       },
     ],
   },
@@ -161,25 +163,52 @@ export const timelineItems = [
     duration: "Jul 2018 - Nov 2018",
     role: "UI Developer",
     company: "Smartron India Pvt Ltd",
-    note: "Developed and maintained the company website and e-commerce experiences, created semantic Handlebars templates, and worked closely with stakeholders on new product pages.",
+    points: [
+      "Responsible for developing and maintaining company website and E-commerce site.",
+      "Created semantic templates using Handlebars.",
+      "Collaborated with design team and stakeholders on new product pages.",
+    ],
+    notableProjects: ["smartron.com (IoT company)", "tstore.smartron.com (E-commerce website)"],
   },
   {
     duration: "Apr 2017 - Jun 2018",
     role: "UI Developer",
     company: "Usha Martin Technologies",
-    note: "Built e-commerce interfaces on the Hybris platform, customized out-of-the-box patterns using JSP, LESS, and JavaScript, and ensured pixel-perfect responsiveness across devices.",
+    points: [
+      "Developed UI for E-commerce websites on Hybris platform.",
+      "Customize OOTB (out of the box) patterns via jsp, tag, less and js files.",
+      "Ensured pixel-perfect responsiveness across multiple devices and browsers.",
+    ],
+    notableProjects: [
+      "PicknPay (Super market store at South Africa)",
+      "lcwaikiki.com (Fashion e-commerce)",
+    ],
   },
   {
     duration: "Jul 2016 - Mar 2017",
     role: "UX Designer",
     company: "CoWrks",
-    note: "Designed and developed in-house websites and apps, created wireframes and UI flows, and supported marketing with structured digital templates.",
+    points: [
+      "Designed and developed in-house websites and web applications.",
+      "Worked on UI/UX for Admin, Partners, and University apps.",
+      "Created wireframes and structured UI flows, Designed email templates for marketing needs.",
+    ],
+    notableProjects: ["Connect (Community app – web and mobile)", "cowrks.com (Workspace website)"],
   },
   {
     duration: "May 2015 - Jun 2016",
     role: "UX Designer",
     company: "Razorfish Technologies India",
-    note: "Worked on responsive web apps and marketing collateral, supported project pitches and client discussions, and streamlined frontend style guides and component systems.",
+    points: [
+      "Designed and developed web apps, marketing collaterals with responsive design approach.",
+      "Engage in project pitching, stakeholder meetings, and client discussions.",
+      "Streamlined processes with Front-end style guides, web components and icon generation.",
+    ],
+    notableProjects: [
+      "Hill-Rom (Health Portal web app)",
+      "Abof (Fashion e-commerce)",
+      "Zestt (e-cigarette website)",
+    ],
   },
 ] as const;
 
