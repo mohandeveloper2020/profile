@@ -47,7 +47,10 @@ export const technicalSkillSections = [
         label: "Bootstrap 5",
         iconUrl: "https://icon.icepanel.io/Technology/svg/Bootstrap.svg",
       },
-
+      {
+        label: "Python",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Python.svg",
+      },
       {
         label: "VS Code",
         iconUrl: "https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg",
@@ -132,7 +135,27 @@ export const timelineItems = [
     duration: "Dec 2018 - Present",
     role: "Lead Consultant - UI/UX",
     company: "ITC Infotech",
-    note: "Leading end-to-end design and development for Next.js and React applications for clients including Hitachi Energy and Merck Group, with dashboards, Gen AI workflows, SPFx customization, and scalable UI delivery.",
+    clients: [
+      {
+        name: "Hitachi Energy",
+        points: [
+          "Leading end-to-end Design and Development of Next.js web applications.",
+          "Defined architecture diagrams, created visual designs, and developed frontend APIs to showcase Gen AI extraction results.",
+          "Built dashboards with analytical charts, upload workflows and multi-role access, ensuring secure and scalable delivery for driving digitalization of engineering documents.",
+          "Presented demos in stakeholders and steerco meetings, aligning with brand guidelines and project objectives.",
+        ],
+      },
+      {
+        name: "Merck Group (Science and Technology Company)",
+        points: [
+          "Developed responsive, scalable, component-based application using React.js and utility-first framework like Tailwind CSS ensuring high quality user experiences.",
+          "Customized SharePoint apps (SPFx) with custom branding and optimal UI design.",
+          "Collaborated with cross-functional teams, including stakeholders, analysts, designers, and backend developers to achieve seamless project execution.",
+          "Utilized design tools such as Figma and Adobe XD for prototyping, enhancing UX design.",
+          "Integration with Liquid Oxygen Design system and UI customization for Gen AI apps.",
+        ],
+      },
+    ],
   },
   {
     duration: "Jul 2018 - Nov 2018",

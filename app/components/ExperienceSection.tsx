@@ -15,7 +15,30 @@ export default function ExperienceSection() {
             <p className="eyebrow mb-1 inline-block text-[0.66rem]">{item.duration}</p>
             <h3 className="text-xl font-semibold text-zinc-900">{item.role}</h3>
             <p className="mb-2 mt-1 font-medium text-zinc-700">{item.company}</p>
-            <p className="leading-7 text-zinc-600">{item.note}</p>
+            {"clients" in item ? (
+              <div className="mt-2 space-y-4">
+                {item.clients.map((client) => (
+                  <div key={client.name}>
+                    <p className="eyebrow mb-2 text-[0.68rem] text-[rgb(15_90_84)]">
+                      Client: {client.name}
+                    </p>
+                    <ul className="space-y-2">
+                      {client.points.map((point) => (
+                        <li key={point} className="flex gap-2.5 text-sm leading-6 text-zinc-600">
+                          <span
+                            aria-hidden="true"
+                            className="mt-[0.35rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]"
+                          />
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="leading-7 text-zinc-600">{item.note}</p>
+            )}
           </article>
         ))}
       </div>
