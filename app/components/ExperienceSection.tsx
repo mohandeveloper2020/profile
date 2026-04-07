@@ -31,12 +31,12 @@ export default function ExperienceSection() {
                     </ul>
                     {"notableProjects" in client && client.notableProjects.length > 0 && (
                       <div className="mt-3">
-                        <p className="eyebrow mb-1.5 text-[0.66rem]">Notable Projects</p>
+                        <p className="eyebrow mb-1.5 text-[0.66rem]">Projects</p>
                         <ul className="flex flex-wrap gap-2">
                           {client.notableProjects.map((project) => (
                             <li
                               key={project}
-                              className="rounded-full border border-[#0f766e33] bg-[rgb(15_118_110_/_8%)] px-2.5 py-1 text-xs text-[rgb(15_80_70)]"
+                              className="rounded-full border border-[#0f766e33] bg-[#0f766e14] px-2.5 py-1 text-xs text-[rgb(15_80_70)]"
                             >
                               {project}
                             </li>
@@ -62,12 +62,12 @@ export default function ExperienceSection() {
                 </ul>
                 {"notableProjects" in item && item.notableProjects.length > 0 && (
                   <div className="mt-3">
-                    <p className="eyebrow mb-1.5 text-[0.66rem]">Notable Projects</p>
+                    <p className="eyebrow mb-1.5 text-[0.66rem]">Projects</p>
                     <ul className="flex flex-wrap gap-2">
                       {item.notableProjects.map((project) => (
                         <li
                           key={project}
-                          className="rounded-full border border-[#0f766e33] bg-[rgb(15_118_110_/_8%)] px-2.5 py-1 text-xs text-[rgb(15_80_70)]"
+                          className="rounded-full border border-[#0f766e33] bg-[#0f766e14] px-2.5 py-1 text-xs text-[rgb(15_80_70)]"
                         >
                           {project}
                         </li>
