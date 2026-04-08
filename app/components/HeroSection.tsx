@@ -15,15 +15,17 @@ export default function HeroSection() {
               Frontend Development &#8226; UI Design &#8226; UX Strategy
             </span>
           </h1>
-          <p className="mt-4 text-sm italic text-[rgb(19_42_19_/_72%)]">{visionStatements[0]}</p>
+          <p className="mt-4 text-sm italic text-[rgb(19_42_19_/72%)]">
+            I enjoy making the web <strong>" Beautiful and User-Friendly "</strong>.
+          </p>
         </div>
-        <div className="w-full max-w-[280px] justify-self-center md:justify-self-end">
+        <div className="w-full max-w-70 justify-self-center md:justify-self-end">
           <Image
             src="/profile-pic.jpg"
             alt="Mohan profile photo"
             width={360}
             height={420}
-            className="h-auto w-full rounded-2xl object-cover shadow-[0_12px_28px_rgb(10_26_10_/_18%)]"
+            className="h-auto w-full rounded-2xl object-cover shadow-[0_12px_28px_rgb(10_26_10_/18%)]"
             priority
           />
         </div>
