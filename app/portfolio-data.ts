@@ -162,7 +162,7 @@ export const timelineItems = [
           "BLUE",
           "On Demand Knowledge (ODK)",
           "Sustainable Business Value (SBV)",
-          "Saizen",
+          "Saizen UK",
           "Ambos",
           "Material Risk Assessment (MRA)",
           "NowPak",
