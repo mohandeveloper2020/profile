@@ -12,9 +12,9 @@ export default function SummarySection() {
     <section className="soft-panel rounded-3xl p-6 md:p-8">
       <p className="eyebrow mb-3">Professional Summary</p>
       <p className="max-w-4xl text-base leading-7 text-zinc-700">
-        UI and UX specialist with over 10 years of expertise in Frontend development and User
-        Interface Design, skilled in enhancing user experiences and drive project success through
-        effective leadership.
+        UI/UX specialist with over 10 years of expertise in Frontend development and User Interface
+        Design, skilled in enhancing user experiences and driving project success through effective
+        leadership.
       </p>
       <ul className="mt-5 space-y-3">
         {bulletPoints.map((point) => (
