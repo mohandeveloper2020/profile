@@ -75,7 +75,7 @@ export const technicalSkillSections = [
     ],
   },
   {
-    title: "UX Design Tools",
+    title: "UX Design",
     items: [
       {
         label: "Figma",
