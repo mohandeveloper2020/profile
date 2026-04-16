@@ -9,7 +9,7 @@ const bulletPoints = [
 
 export default function SummarySection() {
   return (
-    <section className="soft-panel rounded-3xl p-6 md:p-8">
+    <section className="soft-panel rounded-3xl p-6">
       <p className="eyebrow mb-3">Professional Summary</p>
       <p className="max-w-4xl text-base leading-7 text-zinc-700">
         UI/UX specialist with over 10 years of expertise in Frontend development and User Interface

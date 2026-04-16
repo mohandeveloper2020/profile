@@ -16,7 +16,7 @@ export default function HeroSection() {
             </span>
           </h1>
           <p className="mt-4 text-sm italic text-[rgb(19_42_19_/72%)]">
-            I enjoy making the web <strong>" Beautiful and User-Friendly "</strong>.
+            I enjoy making the web <strong>" Beautiful and User-Friendly "</strong>
           </p>
         </div>
         <div className="w-full max-w-70 justify-self-center md:justify-self-end">
